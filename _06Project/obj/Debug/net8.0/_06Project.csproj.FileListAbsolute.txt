@@ -1,0 +1,14 @@
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/bin/Debug/net8.0/_06Project
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/bin/Debug/net8.0/_06Project.deps.json
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/bin/Debug/net8.0/_06Project.runtimeconfig.json
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/bin/Debug/net8.0/_06Project.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/bin/Debug/net8.0/_06Project.pdb
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/_06Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/_06Project.AssemblyInfoInputs.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/_06Project.AssemblyInfo.cs
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/_06Project.csproj.CoreCompileInputs.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/_06Project.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/refint/_06Project.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/_06Project.pdb
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/_06Project.genruntimeconfig.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_06Project/obj/Debug/net8.0/ref/_06Project.dll
