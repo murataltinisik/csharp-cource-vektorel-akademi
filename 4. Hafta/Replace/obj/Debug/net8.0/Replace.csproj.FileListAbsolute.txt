@@ -1,0 +1,15 @@
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/bin/Debug/net8.0/Replace
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/bin/Debug/net8.0/Replace.deps.json
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/bin/Debug/net8.0/Replace.runtimeconfig.json
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/bin/Debug/net8.0/Replace.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/bin/Debug/net8.0/Replace.pdb
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/Replace.GeneratedMSBuildEditorConfig.editorconfig
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/Replace.AssemblyInfoInputs.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/Replace.AssemblyInfo.cs
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/Replace.csproj.CoreCompileInputs.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/Replace.sourcelink.json
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/Replace.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/refint/Replace.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/Replace.pdb
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/Replace.genruntimeconfig.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/4. Hafta/Replace/obj/Debug/net8.0/ref/Replace.dll

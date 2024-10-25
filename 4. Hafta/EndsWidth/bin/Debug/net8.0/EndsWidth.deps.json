@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EndsWidth/1.0.0": {
+        "runtime": {
+          "EndsWidth.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EndsWidth/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
