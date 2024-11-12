@@ -1,0 +1,15 @@
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/bin/Debug/net8.0/Entities
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/bin/Debug/net8.0/Entities.deps.json
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/bin/Debug/net8.0/Entities.runtimeconfig.json
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/bin/Debug/net8.0/Entities.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/bin/Debug/net8.0/Entities.pdb
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/Entities.AssemblyInfoInputs.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/Entities.AssemblyInfo.cs
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/Entities.csproj.CoreCompileInputs.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/Entities.sourcelink.json
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/Entities.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/refint/Entities.dll
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/Entities.pdb
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/Entities.genruntimeconfig.cache
+/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/6. Hafta/02/Entities/obj/Debug/net8.0/ref/Entities.dll

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.APIKeys</OriginalElement>
+  <nodes>
+    <node x="1012.0" y="676.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Posts</node>
+    <node x="783.5" y="1032.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.SavedPosts</node>
+    <node x="623.5" y="452.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Logs</node>
+    <node x="479.0" y="688.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Profiles</node>
+    <node x="1065.0" y="1020.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostDetails</node>
+    <node x="40.5" y="76.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users</node>
+    <node x="243.5" y="440.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Friends</node>
+    <node x="1403.0" y="1032.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.APIKeys</node>
+    <node x="0.0" y="1268.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Reports</node>
+    <node x="118.0" y="712.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.BlockedUsers</node>
+    <node x="1211.5" y="700.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.GroupMembers</node>
+    <node x="1235.5" y="100.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Groups</node>
+    <node x="905.5" y="1280.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostComments</node>
+    <node x="1355.5" y="452.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Hashtags</node>
+    <node x="1253.0" y="1328.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostsHashtags</node>
+    <node x="705.5" y="724.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.SearchHistory</node>
+    <node x="-94.5" y="688.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Messages</node>
+    <node x="1116.5" y="-128.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Categories</node>
+    <node x="805.5" y="440.0">131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Notifications</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Reports" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Posts" relationship="REFERENCES">
+      <point x="60.0" y="-116.0" />
+      <point x="150.0" y="984.0" />
+      <point x="1030.0" y="984.0" />
+      <point x="1030.0" y="964.0" />
+      <point x="1090.0" y="964.0" />
+      <point x="0.0" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.SavedPosts" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Posts" relationship="REFERENCES">
+      <point x="33.25" y="-92.0" />
+      <point x="883.25" y="984.0" />
+      <point x="1030.0" y="984.0" />
+      <point x="1030.0" y="964.0" />
+      <point x="1090.0" y="964.0" />
+      <point x="0.0" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostComments" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="-42.25" y="-104.0" />
+      <point x="947.75" y="944.0" />
+      <point x="450.0" y="944.0" />
+      <point x="450.0" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Friends" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="33.25" y="-104.0" />
+      <point x="343.25" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Profiles" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="0.0" y="-116.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostDetails" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Posts" relationship="REFERENCES">
+      <point x="-42.5" y="-104.0" />
+      <point x="1107.5" y="984.0" />
+      <point x="1030.0" y="984.0" />
+      <point x="1030.0" y="964.0" />
+      <point x="1090.0" y="964.0" />
+      <point x="0.0" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.SearchHistory" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="0.0" y="-80.0" />
+      <point x="790.0" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostDetails" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="42.5" y="-104.0" />
+      <point x="1192.5" y="964.0" />
+      <point x="1190.0" y="964.0" />
+      <point x="1190.0" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostsHashtags" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Hashtags" relationship="REFERENCES">
+      <point x="38.5" y="-56.0" />
+      <point x="1368.5" y="1004.0" />
+      <point x="1450.0" y="1004.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.GroupMembers" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="-39.25" y="-104.0" />
+      <point x="1250.75" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Notifications" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="0.0" y="-104.0" />
+      <point x="890.0" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.GroupMembers" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Groups" relationship="REFERENCES">
+      <point x="39.25" y="-104.0" />
+      <point x="1329.25" y="664.0" />
+      <point x="1330.0" y="664.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Messages" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="-42.25" y="-116.0" />
+      <point x="-52.25" y="644.0" />
+      <point x="74.0625" y="644.0" />
+      <point x="-55.9375" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.SavedPosts" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="-33.25" y="-92.0" />
+      <point x="816.75" y="964.0" />
+      <point x="410.0" y="964.0" />
+      <point x="410.0" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Posts" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="-39.0" y="-128.0" />
+      <point x="1051.0" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostsHashtags" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Posts" relationship="REFERENCES">
+      <point x="-38.5" y="-56.0" />
+      <point x="1291.5" y="984.0" />
+      <point x="1030.0" y="984.0" />
+      <point x="1030.0" y="964.0" />
+      <point x="1090.0" y="964.0" />
+      <point x="0.0" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Posts" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Categories" relationship="REFERENCES">
+      <point x="39.0" y="-128.0" />
+      <point x="1129.0" y="384.0" />
+      <point x="1210.0" y="384.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.PostComments" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Posts" relationship="REFERENCES">
+      <point x="42.25" y="-104.0" />
+      <point x="1032.25" y="984.0" />
+      <point x="1030.0" y="984.0" />
+      <point x="1030.0" y="964.0" />
+      <point x="1090.0" y="964.0" />
+      <point x="0.0" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Reports" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="0.0" y="-116.0" />
+      <point x="90.0" y="684.0" />
+      <point x="118.8125" y="684.0" />
+      <point x="-11.1875" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Logs" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="0.0" y="-92.0" />
+      <point x="690.0" y="404.0" />
+      <point x="570.0" y="404.0" />
+      <point x="570.0" y="364.0" />
+      <point x="208.3125" y="364.0" />
+      <point x="78.3125" y="128.0" />
+    </edge>
+    <edge source="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.BlockedUsers" target="131dabf0-b398-40b6-aa6a-3eb6d78023ef.TABLE:SocialMedia.public.Users" relationship="REFERENCES">
+      <point x="-36.0" y="-92.0" />
+      <point x="154.0" y="684.0" />
+      <point x="141.1875" y="684.0" />
+      <point x="11.1875" y="128.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5643203883495146" showDependencies="false" x="662.5" y="686.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
