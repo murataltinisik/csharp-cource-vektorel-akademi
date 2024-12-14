@@ -1,0 +1,49 @@
+@model NortwindMVC.Models.DTOs.Category.CategoryDto
+
+@{
+  ViewBag.Title = "New Category";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid pt-3">
+  <!-- Page Heading -->
+  <div
+    class="d-sm-flex align-items-center justify-content-between mb-4"
+  >
+    <!-- Title -->
+    <h1 class="h3 mb-0 text-gray-800">New Category</h1>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="w-50 mx-auto">
+    @if(TempData["Error"] != null){
+      <div class="alert alert-danger">
+        @TempData["Error"]
+      </div>
+    }
+
+    <form asp-action="Add" asp-controller="Category" method="POST">
+      <input
+        type="text"
+        name="CategoryName"
+        placeholder="Category Name"
+        value="@Model?.CategoryName"
+        class="form-control form-control-user"/>
+
+      <br/>
+
+      <textarea
+        name="Description"
+        placeholder="Description"
+        class="form-control form-control-user"
+      >@Model?.Description</textarea>
+
+      <br/>
+
+      <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-outline-primary w-50">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- /.container-fluid -->

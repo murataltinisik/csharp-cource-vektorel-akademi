@@ -1,0 +1,67 @@
+@using NortwindMVC.Models.Entities.Product
+@model NortwindMVC.Models.Entities.Product.ProductViewModel
+
+@{
+  ViewBag.Title = "Products";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid pt-3">
+  <!-- Page Heading -->
+  <div
+    class="d-sm-flex align-items-center justify-content-between mb-4"
+  >
+    <h1 class="h3 mb-0 text-gray-800">Products</h1>
+
+    <a asp-action="Add" asp-controller="Product" class="btn btn-outline-success">
+      New Product
+    </a>
+  </div>
+
+  @if(TempData["Error"] != null){
+    <div class="alert alert-danger">
+      @TempData["Error"]
+    </div>
+  }
+
+  @if(TempData["Success"] != null){
+    <div class="alert alert-success">
+      @TempData["Success"]
+    </div>
+  }
+  
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="table-responsive">
+        <table
+          class="table table-bordered"
+          id="dataTable"
+          width="100%"
+          cellspacing="0"
+        >
+          <thead>
+          <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Unit Price</th>
+            <th>Units In Stock</th>
+            <th>Category</th>
+          </tr>
+          </thead>
+          <tbody>
+          @foreach(Product product in @Model.Products){
+            <tr>
+              <td>@product.ProductId</td>
+              <td>@product.ProductName</td>
+              <td>@product.UnitPrice</td>
+              <td>@product.UnitsInStock</td>
+              <td>@product.Category.CategoryName</td>
+            </tr>
+          }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container-fluid -->

@@ -1,0 +1,49 @@
+@using NortwindMVC.Models.Entities.Order
+@model NortwindMVC.Models.Entities.Order.OrderViewModel
+
+@{
+  ViewBag.Title = "Orders";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid pt-3">
+  <!-- Page Heading -->
+  <div
+    class="d-sm-flex align-items-center justify-content-between mb-4"
+  >
+    <h1 class="h3 mb-0 text-gray-800">Orders</h1>
+  </div>
+  
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="table-responsive">
+        <table
+          class="table table-bordered"
+          id="dataTable"
+          width="100%"
+          cellspacing="0"
+        >
+          <thead>
+          <tr>
+            <th>Order Id</th>
+            <th>Freight</th>
+            <th>Order Date</th>
+            <th>Customer</th>
+          </tr>
+          </thead>
+          <tbody>
+          @foreach(Order order in Model.Orders){
+            <tr>
+              <td>@order.OrderId</td>
+              <td>@order.Freight</td>
+              <td>@order.OrderDate</td>
+              <td>@order.Customer.ContactName - @order.Customer.CompanyName</td>
+            </tr>
+          }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container-fluid -->

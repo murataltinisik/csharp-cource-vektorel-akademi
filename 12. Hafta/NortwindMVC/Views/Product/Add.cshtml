@@ -1,0 +1,76 @@
+@using NortwindMVC.Models.Entities.Category
+@model NortwindMVC.Models.DTOs.Product.ProductDto
+
+@{
+    ViewBag.Title = "New Product";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid pt-3">
+    <!-- Page Heading -->
+    <div
+        class="d-sm-flex align-items-center justify-content-between mb-4"
+    >
+        <!-- Title -->
+        <h1 class="h3 mb-0 text-gray-800">New Product</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="w-50 mx-auto">
+        @if(TempData["Error"] != null){
+            <div class="alert alert-danger">
+                @TempData["Error"]
+            </div>
+        }
+        
+        <form asp-action="Add" asp-controller="Product" method="POST">
+            <input
+                type="text"
+                name="ProductName"
+                placeholder="Product Name"
+                value="@Model?.ProductName"
+                class="form-control form-control-user"/>
+
+            <br/>
+
+            <input
+                type="text"
+                name="UnitPrice"
+                placeholder="Unit Price"
+                value="@Model?.UnitPrice"
+                class="form-control form-control-user"/>
+
+            <br/>
+
+            <input
+                type="text"
+                name="UnitsInStock"
+                placeholder="UnitInStock"
+                value="@Model?.UnitsInStock"
+                class="form-control form-control-user"/>
+
+            <br/>
+
+            @if (ViewBag.Categories != null)
+            {
+                <select
+                    name="CategoryId"
+                    class="form-control form-control-user"
+                    aria-label="Default select example">
+                    <option selected>Select Category</option>
+                    @foreach (Category category in ViewBag.Categories)
+                    {
+                        <option value="@category.CategoryId">@category.CategoryName</option>
+                    }
+                </select>
+            }
+
+            <br/>
+
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-outline-primary w-50">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /.container-fluid -->

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_05Project/_05Project.csproj": {}
+    "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/1. Hafta/_05Project/_05Project.csproj": {}
   },
   "projects": {
-    "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_05Project/_05Project.csproj": {
+    "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/1. Hafta/_05Project/_05Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_05Project/_05Project.csproj",
+        "projectUniqueName": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/1. Hafta/_05Project/_05Project.csproj",
         "projectName": "_05Project",
-        "projectPath": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_05Project/_05Project.csproj",
+        "projectPath": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/1. Hafta/_05Project/_05Project.csproj",
         "packagesPath": "/Users/murataltinisik/.nuget/packages/",
-        "outputPath": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_05Project/obj/",
+        "outputPath": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/1. Hafta/_05Project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/murataltinisik/.nuget/NuGet/NuGet.Config"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

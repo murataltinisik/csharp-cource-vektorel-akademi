@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_03Project/_03Project.csproj",
+      "projectUniqueName": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/1. Hafta/_03Project/_03Project.csproj",
       "projectName": "_03Project",
-      "projectPath": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_03Project/_03Project.csproj",
+      "projectPath": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/1. Hafta/_03Project/_03Project.csproj",
       "packagesPath": "/Users/murataltinisik/.nuget/packages/",
-      "outputPath": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/_03Project/obj/",
+      "outputPath": "/Users/murataltinisik/Desktop/csharp-cource-vektorel-akademi/1. Hafta/_03Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/murataltinisik/.nuget/NuGet/NuGet.Config"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

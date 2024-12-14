@@ -1,0 +1,65 @@
+@using NortwindMVC.Models.Entities.Customer
+@model NortwindMVC.Models.Entities.Customer.CustomerViewModel
+
+@{
+  ViewBag.Title = "Customers";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid pt-3">
+  <!-- Page Heading -->
+  <div
+    class="d-sm-flex align-items-center justify-content-between mb-4"
+  >
+    <h1 class="h3 mb-0 text-gray-800">Customers</h1>
+
+    <a asp-action="Add" asp-controller="Customer" class="btn btn-outline-success">
+      New Customer
+    </a>
+  </div>
+
+  @if(TempData["Error"] != null){
+    <div class="alert alert-danger">
+      @TempData["Error"]
+    </div>
+  }
+
+  @if(TempData["Success"] != null){
+    <div class="alert alert-success">
+      @TempData["Success"]
+    </div>
+  }
+  
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="table-responsive">
+        <table
+          class="table table-bordered"
+          id="dataTable"
+          width="100%"
+          cellspacing="0"
+        >
+          <thead>
+          <tr>
+            <th>Customer Id</th>
+            <th>Contact Name</th>
+            <th>Company Name</th>
+            <th>Address</th>
+          </tr>
+          </thead>
+          <tbody>
+          @foreach(Customer customer in Model.Customers) {
+            <tr>
+              <td>@customer.CustomerId</td>
+              <td>@customer.ContactName</td>
+              <td>@customer.CompanyName</td>
+              <td>@customer.Address</td>
+            </tr>
+          }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<!-- /.container-fluid -->
+</div>
