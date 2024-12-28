@@ -1,0 +1,463 @@
+@model MvcProject.Areas.Admin.Models.ViewModels.EmployeeViewModel
+
+<div class="container-fluid py-2">
+  <div class="row mb-5">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header p-2 ps-3">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="text-sm mb-0 text-capitalize">Number Of Employee</p>
+              <h4 class="mb-0" id="NumberOfEmployee">@Model.NumberOfEmployee</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12">
+      <div class="card my-4">
+        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+          <div
+            class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3 d-flex justify-content-between align-items-center">
+            <h6 class="text-white text-capitalize ps-3">Employee table</h6>
+            <button
+              class="btn btn-primary me-3"
+              data-bs-toggle="modal"
+              data-bs-target="#NewModal">
+              New Employee
+            </button>
+          </div>
+        </div>
+        <div class="card-body px-0 pb-2">
+          @if (Model.Employees.Count > 0)
+          {
+            <div class="table-responsive p-0">
+              <table class="table table-hover table-striped  align-items-center mb-0">
+                <thead>
+                <tr>
+                  <th
+                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                    First Name
+                  </th>
+                  <th
+                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                    Last Name
+                  </th>
+                  <th
+                    class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                    Birth Date
+                  </th>
+                  <th
+                    class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                    County
+                  </th>
+                  <th
+                    class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                    City
+                  </th>
+                  <th
+                    class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                    Hire Date
+                  </th>
+                  <th class="text-secondary text-center opacity-7">~</th>
+                </tr>
+                </thead>
+                <tbody id="TableBodyData">
+                @foreach (var employee in Model.Employees)
+                {
+                  <tr
+                    data-id="@employee.EmployeeId"
+                    data-lastname="@employee.LastName"
+                    data-firstname="@employee.FirstName"
+                    data-birthdate="@employee.BirthDate.ToShortDateString()"
+                    data-hiredate="@employee.HireDate.ToShortDateString()"
+                    data-country="@employee.Country"
+                    data-city="@employee.City">
+                    <td>
+                      <span class="text-xs font-weight-bold ps-4 firstname">@employee.FirstName</span
+                      >
+                    </td>
+                    <td>
+                      <span class="text-xs font-weight-bold lastname">@employee.LastName</span
+                      >
+                    </td>
+                    <td class="text-center">
+                      <span class="text-xs font-weight-bold birthdate">@employee.BirthDate.ToShortDateString()</span
+                      >
+                    </td>
+                    <td class="text-center">
+                      <span class="text-xs font-weight-bold country">@employee.Country</span
+                      >
+                    </td>
+
+                    <td class="text-center">
+                      <span class="text-xs font-weight-bold city">@employee.City</span
+                      >
+                    </td>
+                    <td class="text-center">
+                      <span class="text-xs font-weight-bold hiredate">@employee.HireDate.ToShortDateString()</span
+                      >
+                    </td>
+                    <td class="align-middle text-center">
+                      <a
+                        href="javascript:void(0);"
+                        class="text-secondary font-weight-bold text-xs updateFormModal"
+                        data-id="@employee.EmployeeId"
+                        data-bs-toggle="modal"
+                        data-bs-target="#NewModal">
+                        Edit
+                      </a>
+
+                      <a
+                        href="javascript:void(0);"
+                        class="text-secondary font-weight-bold text-xs deleteData">
+                        Delete
+                      </a>
+                    </td>
+                  </tr>
+                }
+                </tbody>
+              </table>
+            </div>
+          }
+          else
+          {
+            <div class="alert alert-danger">Not Anything data!</div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  id="NewModal"
+  tabindex="-1"
+  class="modal fade"
+  aria-hidden="true"
+  aria-labelledby="exampleModalLabel"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New Employee</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form id="NewAddModalForm">
+        <div class="modal-body">
+          <div
+            class="d-flex gap-3 justify-content-between align-items-center mb-3"
+          >
+            <div class="input-group input-group-outline w-100">
+              <label class="form-label">First Name</label>
+              <input name="FirstName" type="text" class="form-control" />
+            </div>
+
+            <div class="input-group input-group-outline w-100">
+              <label class="form-label">Last Name</label>
+              <input name="LastName" type="text" class="form-control" />
+            </div>
+          </div>
+
+          <div
+            class="d-flex gap-3 justify-content-between align-items-center mb-3"
+          >
+            <div class="input-group input-group-outline w-100">
+              <input
+                name="BirthDate"
+                value=""
+                type="date"
+                class="form-control"
+              />
+            </div>
+
+            <div class="input-group input-group-outline w-100">
+              <input
+                name="HireDate"
+                value=""
+                type="date"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div
+            class="d-flex gap-3 justify-content-between align-items-center mb-3"
+          >
+            <div class="input-group input-group-outline w-100">
+              <label class="form-label">Country</label>
+              <input name="Country" type="text" class="form-control" />
+            </div>
+
+            <div class="input-group input-group-outline w-100">
+              <label class="form-label">City</label>
+              <input name="City" type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+@section javascript {
+  <script>
+    function formatDate(dateString) {
+      if (!dateString) return ""; 
+      const date = new Date(dateString);
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0"); 
+      const day = String(date.getDate()).padStart(2, "0");        
+      return `${year}-${month}-${day}`;
+    }
+    
+  $(document).ready(function () {
+    let employeeId = null;
+    let numberOfEmployee = parseInt("@Model.NumberOfEmployee");
+    let isUpdateOperation = false;
+    
+    const formItems = [
+      $('input[name="FirstName"]:eq(0)'),
+      $('input[name="LastName"]:eq(0)'),
+      $('input[name="BirthDate"]:eq(0)'),
+      $('input[name="HireDate"]:eq(0)'),
+      $('input[name="Country"]:eq(0)'),
+      $('input[name="City"]:eq(0)'),
+    ];
+    
+    // -------- Listen Modal (Close)
+    $('#NewModal').on('hidden.bs.modal', function () {
+      // Clear Form Items
+      formItems.forEach((item) => {
+        item.val("");     
+        item.parent().removeClass("is-focused focused");         
+      });
+      
+      // Is Update Operation
+      isUpdateOperation = false;
+    });
+    
+    // -------- New Form Modal
+    $("#NewAddModalForm").submit(function (e) {
+      // Prevent Default
+      e.preventDefault();
+      
+      // Form Data
+      const formData = {
+        firstName: formItems[0].val(),
+        lastName: formItems[1].val(),
+        birthDate: formItems[2].val(),
+        hireDate: formItems[3].val(),
+        country: formItems[4].val(),
+        city: formItems[5].val(),
+      }
+
+      $.ajax({
+        method: isUpdateOperation ? "PUT" : "POST",
+        url: isUpdateOperation ? `/Admin/Employee/Update/${employeeId}` : "/Admin/Employee/Create",
+        data: formData,
+        success: (response) => {
+          if (response.statusCode == 200) {
+            Swal.fire({
+              title: response.message,
+              icon: "success",
+            }).then(() => {
+              // Hide Modal 
+              $('#NewModal').modal("hide");
+
+              if (isUpdateOperation) {
+                // Get Row
+                const row = $(`#TableBodyData tr[data-id="${employeeId}"]`);
+                
+                // Style Row
+                row.css("background", "rgb(31 120 50 / 20%)");
+                
+                // Update
+                row.find(".firstname").eq(0).text(response.data.firstName);
+                row.find(".lastname").eq(0).text(response.data.lastName);
+                row.find(".birthdate").eq(0).text(formatDate(response.data.birthDate));
+                row.find(".hiredate").eq(0).text(formatDate(response.data.hireDate));
+                row.find(".country").eq(0).text(response.data.country);
+                row.find(".city").eq(0).text(response.data.city);
+              } else { 
+                // Table Body Data
+                $('#TableBodyData').prepend(trHtml(response.data));
+                
+                // Number Of Employee
+                $('#NumberOfEmployee').text(numberOfEmployee + 1);
+              }
+            });
+          } else {
+            Swal.fire({ title: response.message, icon: "error" });
+          }
+        },
+        error : () => {
+          // Message
+          Swal.fire({
+            icon: "error",
+            title: "An unexpected error occurred",
+          });
+        }
+      });
+    });
+    
+    // -------- .UpdateFormModal Click
+    $(document).on('click', '.updateFormModal', function () {
+      // Get Tr
+      const row = $(this).closest("tr");
+
+      // Clear Form Items
+      formItems.forEach((item) => {
+        item.parent().addClass("is-focused focused");
+      });
+      
+      // Fill Form Items
+      employeeId = row.data("id");
+      formItems[0].val(row.data("firstname"));
+      formItems[1].val(row.data("lastname"));
+      formItems[2].val(formatDate(row.data("birthdate")));
+      formItems[3].val(formatDate(row.data("hiredate")));
+      formItems[4].val(row.data("country"));
+      formItems[5].val(row.data("city"));
+
+      // Is Update Operation 
+      isUpdateOperation = true;
+    });
+    
+    // -------- .DeleteData Click
+    $(document).on('click', '.deleteData', function () {
+      Swal.fire({
+        title: "Do you want to delete data!",
+        showCancelButton: true,
+        confirmButtonText: "Delete",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Get Tr
+          const row = $(this).closest("tr");
+
+          // Get Employee Id
+          const employeeId = row.data("id");
+
+          // Ajax
+          $.ajax({
+            method: "DELETE",
+            url: `/Admin/Employee/Delete/${employeeId}`,
+            success: (response) => {
+              if (response.statusCode == 200){
+                // Message
+                Swal.fire({
+                  icon: "success",
+                  title: response.message,
+                }).then(() => {
+                  // Hide
+                  row.fadeOut("slow");
+                  
+                  // Number Of Employee
+                  $('#NumberOfEmployee').text(numberOfEmployee - 1);
+                });
+              } else {
+                // Message
+                Swal.fire({
+                  icon: "error",
+                  title: response.message,
+                });
+              }
+            },
+            error : () => {
+              // Message
+              Swal.fire({
+                icon: "error",
+                title: "An unexpected error occurred", 
+              });
+            }
+          });
+        }
+      });
+    });
+
+    //
+    const trHtml = (item) => `<tr
+                    data-id="${item.employeeId}"
+                    data-lastname="${item.lastName}"
+                    data-firstname="${item.firstName}"
+                    data-birthdate="${item.birthDate}"
+                    data-hiredate="${item.hireDate}"
+                    data-country="${item.country}"
+                    data-city="${item.city}"
+                    style="background: rgb(31 120 50 / 20%);"
+                  >
+                  <td>
+                    <span class="text-xs font-weight-bold ps-4 firstname"
+                      >${item.firstName}</span
+                    >
+                  </td>
+                  <td>
+                    <span class="text-xs font-weight-bold lastname"
+                      >${item.lastName}</span
+                    >
+                  </td>
+                  <td class="text-center">
+                    <span class="text-xs font-weight-bold birthdate"
+                      >${item.birthDate}</span
+                    >
+                  </td>
+                  <td class="text-center">
+                    <span class="text-xs font-weight-bold country"
+                    >${item.country}</span
+                    >
+                  </td>
+
+                  <td class="text-center">
+                    <span class="text-xs font-weight-bold city"
+                    >${item.city}</span
+                    >
+                  </td>
+                  <td class="text-center">
+                    <span class="text-xs font-weight-bold hiredate"
+                      >${item.hireDate}</span
+                    >
+                  </td>
+                  <td class="align-middle text-center">
+                    <a
+                      href="javascript:void(0);"
+                      class="text-secondary font-weight-bold text-xs updateFormModal"
+                      data-id="${item.employeeId}"
+                      data-bs-toggle="modal"
+                      data-bs-target="#NewModal"
+                    >
+                      Edit
+                    </a>
+
+                    <a
+                      href="javascript:void(0);"
+                      class="text-secondary font-weight-bold text-xs deleteData"
+                    >
+                      Delete
+                    </a>
+                  </td>
+                </tr>`;
+  });
+
+  </script>
+}
